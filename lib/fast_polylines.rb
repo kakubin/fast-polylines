@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "fast_polylines/fast_polylines"
+require_relative "fast_polylines/fast_polylines"
 
 module FastPolylines::Encoder
   # @deprecated Use {FastPolylines.encode} instead.

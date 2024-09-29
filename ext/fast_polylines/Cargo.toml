@@ -1,0 +1,15 @@
+[package]
+name = "fast_polylines"
+version = "2.2.2"
+edition = "2021"
+authors = ["Cyrille Courtière", "Ulysse Buonomo"]
+license = "MIT"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+magnus = { version = "0.6.2" }
+polyline = { version = "0.10.1" }
+geo-types = { version = "0.7.13" }

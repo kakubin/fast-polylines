@@ -14,8 +14,8 @@ Gem::Specification.new do |spec|
   spec.license     = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.6")
 
-  spec.files = Dir["{lib,ext}/**/*.{rb,c}"] + %w(README.md CHANGELOG.md .yardopts)
-  spec.extensions = ["ext/fast_polylines/extconf.rb"]
+  spec.files = Dir["{lib,ext}/**/*.{rb,rs}"] + Dir["ext/**/*"] + %w(README.md CHANGELOG.md .yardopts)
+  spec.extensions = ["ext/fast_polylines/Cargo.toml"]
   spec.test_files = Dir["spec/**/*"] + %w(.rspec)
   spec.require_paths = "lib"
 

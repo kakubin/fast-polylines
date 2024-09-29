@@ -1,14 +1,6 @@
 # frozen_string_literal: true
 
 require "mkmf"
+require "rb_sys/mkmf"
 
-if ENV["DEBUG"]
-  warn "DEBUG MODE."
-  $CFLAGS << " " << %w(
-    -Wall
-    -ggdb
-    -DDEBUG
-    -pedantic
-  ) * " "
-end
-create_makefile "fast_polylines/fast_polylines"
+create_rust_makefile "fast_polylines/fast_polylines"
